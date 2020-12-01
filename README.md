@@ -17,7 +17,7 @@ whole Graphene-SQLAlchemy repository:
 
 ```bash
 # Get the example project code
-git clone https://github.com/valhuber/payment-allocation-graphene.git
+git clone https://github.com/valhuber/payment_allocation_graphene.git
 ```
 
 It is good idea (but not required) to create a virtual environment
