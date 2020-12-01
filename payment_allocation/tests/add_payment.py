@@ -6,27 +6,26 @@ import logic_bank_utils.util as logic_bank_utils
     logic_bank_utils.add_python_path(project_dir="payment_allocation_graphene", my_file=__file__)
 print("\n" + did_fix_path + "\n\n" + sys_env_info + "\n\n")
 
+import os
+from shutil import copyfile
+from logic_bank.util import prt
+
 
 def setup_db():
-    import os
-    from shutil import copyfile
-    from logic_bank.util import prt
+    """ copy db/database-gold.sqlite3 over db/database.sqlite3"""
+    print("\n" + prt("restoring database-gold\n"))
 
-    def setup_db():
-        """ copy db/database-gold.sqlite3 over db/database.sqlite3"""
-        print("\n" + prt("restoring database-gold\n"))
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    basedir = os.path.dirname(basedir)
 
-        basedir = os.path.abspath(os.path.dirname(__file__))
-        basedir = os.path.dirname(basedir)
+    print("\n********************************\n"
+          "  IMPORTANT - create database.sqlite3 from database-gold.sqlite3 in " + basedir + "/payment_allocation/db/\n" +
+          "            - from -- " + prt("") +
+          "\n********************************")
 
-        print("\n********************************\n"
-              "  IMPORTANT - create database.sqlite3 from database-gold.sqlite3 in " + basedir + "/payment_allocation/db/\n" +
-              "            - from -- " + prt("") +
-              "\n********************************")
-
-        db_loc = os.path.join(basedir, "db/database.sqlite3")
-        db_source = os.path.join(basedir, "db/database-gold.sqlite3")
-        copyfile(src=db_source, dst=db_loc)
+    db_loc = os.path.join(basedir, "database.sqlite3")
+    db_source = os.path.join(basedir, "database-gold.sqlite3")
+    copyfile(src=db_source, dst=db_loc)
 
 
 setup_db()
