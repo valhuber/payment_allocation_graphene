@@ -7,6 +7,8 @@ import logic_bank_utils.util as logic_bank_utils
 print("\n" + did_fix_path + "\n\n" + sys_env_info + "\n\n")
 
 from payment_allocation.database import db_session, init_db
+from payment_allocation.models import Customer, Order, Payment, PaymentAllocation
+
 from flask import Flask
 from payment_allocation.schema import schema
 
@@ -15,45 +17,6 @@ from flask_graphql import GraphQLView
 
 app = Flask(__name__)
 app.debug = True
-
-example_query_z = """
-{
-  allEmployees(sort: [NAME_ASC, ID_ASC]) {
-    edges {
-      node {
-        id
-        name
-        department {
-          id
-          name
-        }
-        role {
-          id
-          name
-        }
-      }
-    }
-  }
-}
-"""
-
-
-example_query = """
-{
-  allCustomers {
-    edges {
-      node {
-        Id
-        Balance
-        OrderList {
-          CustomerID
-          AmountTotal
-        }
-      }
-    }
-  }
-}
-"""
 
 app.add_url_rule(
     "/graphql", view_func=GraphQLView.as_view("graphql", schema=schema, graphiql=True)
@@ -66,6 +29,6 @@ def shutdown_session(exception=None):
 
 
 if __name__ == "__main__":
-    # init_db()
+    init_db()
     print("DB Init Complete")
     app.run()

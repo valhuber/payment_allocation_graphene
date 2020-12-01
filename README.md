@@ -7,6 +7,8 @@ This example project demos integration between:
 and 
 * [LogicBank](https://github.com/valhuber/LogicBank)
 
+It is an adaption of [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy).
+
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
 
 Getting started
@@ -81,8 +83,6 @@ which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issu
     }
   }
 }
-
-
 ```
 
 ```
