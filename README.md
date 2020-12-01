@@ -56,11 +56,28 @@ Explore Graphene
 Now the following command will setup the database, and start the server:
 
 ```bash
+chmod +x app.py
 ./app.py
-
 ```
 
 
 Now head on over to
 [http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
-and run some queries!
+and run some queries; sample:
+
+```
+{
+  allCustomers {
+    edges {
+      node {
+        Id
+        Balance
+        OrderList {
+          CustomerID
+          AmountTotal
+        }
+      }
+    }
+  }
+}
+```
