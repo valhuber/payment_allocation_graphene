@@ -63,7 +63,27 @@ chmod +x app.py
 
 Now head on over to
 [http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
-and run some queries; sample:
+and run some queries; samples below.
+
+This fails with ```Request' object has no attribute 'get'```
+
+Mentioned in this [stack overflow](https://github.com/graphql-python/graphene-sqlalchemy/issues/130),
+which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286)
+
+```
+{
+  allCustomers(sort: [ID_ASC]) {
+    edges {
+      node {
+        Id
+        Balance
+      }
+    }
+  }
+}
+
+
+```
 
 ```
 {
