@@ -1,7 +1,12 @@
-Example Flask+SQLAlchemy+LogicBank
-==================================
+Example: Graphene + SQLAlchemy + LogicBank
+==========================================
 
-This example project demos integration between Graphene, Flask, SQLAlchemy and LogicBank.
+This example project demos integration between:
+
+* [Graphene-SQLAlchemy](https://github.com/graphql-python/graphene-sqlalchemy)
+and 
+* [LogicBank](https://github.com/valhuber/LogicBank)
+
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
 
 Getting started
@@ -13,7 +18,6 @@ whole Graphene-SQLAlchemy repository:
 ```bash
 # Get the example project code
 git clone https://github.com/valhuber/payment-allocation-graphene.git
-cd graphene-sqlalchemy/examples/flask_sqlalchemy
 ```
 
 It is good idea (but not required) to create a virtual environment
@@ -26,6 +30,7 @@ to be useful:
 
 ```bash
 # Create a virtualenv in which we can install the dependencies
+cd payment_allocation_graphene
 virtualenv venv
 source venv/bin/activate
 ```
@@ -40,7 +45,7 @@ Verify LogicBank
 ----------------
 
 ```bash
-cd tests
+cd payment_allocation/tests
 python add_payment.py
 ```
 

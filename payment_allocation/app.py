@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from database import db_session, init_db
+from payment_allocation.database import db_session, init_db
 from flask import Flask
-from schema import schema
+from payment_allocation.schema import schema
 
 from flask_graphql import GraphQLView
 
@@ -42,6 +42,6 @@ def shutdown_session(exception=None):
 
 
 if __name__ == "__main__":
-    init_db()
+    # init_db()
     print("DB Init Complete")
     app.run()
