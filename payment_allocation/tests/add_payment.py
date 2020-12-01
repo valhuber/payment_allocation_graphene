@@ -6,13 +6,13 @@ import logic_bank_utils.util as logic_bank_utils
     logic_bank_utils.add_python_path(project_dir="payment_allocation_graphene", my_file=__file__)
 print("\n" + did_fix_path + "\n\n" + sys_env_info + "\n\n")
 
-import os
-from shutil import copyfile
-from logic_bank.util import prt
-
 
 def setup_db():
     """ copy db/database-gold.sqlite3 over db/database.sqlite3"""
+    import os
+    from shutil import copyfile
+    from logic_bank.util import prt
+
     print("\n" + prt("restoring database-gold\n"))
 
     basedir = os.path.abspath(os.path.dirname(__file__))
@@ -30,23 +30,13 @@ def setup_db():
 
 setup_db()
 
-import sqlalchemy_utils
-
 import payment_allocation.models as models
 from logic_bank.exec_row_logic.logic_row import LogicRow
 from logic_bank.util import row_prt, prt
 from payment_allocation.logic import session  # opens db, activates logic listener <--
 
-cls = sqlalchemy_utils.functions.get_class_by_table(models.Base, "Product", data=None)  # FIXME ??
-
-# Add Order - works
 pre_cust = session.query(models.Customer).filter(models.Customer.Id == "ALFKI").one()
 session.expunge(pre_cust)
-
-
-"""
-    Test 1 - create allocation row
-"""
 
 cust_alfki = session.query(models.Customer).filter(models.Customer.Id == "ALFKI").one()
 

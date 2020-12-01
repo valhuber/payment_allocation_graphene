@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Basic Logic Bank Test running">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/tests/add_payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/tests/add_payment.py" afterDir="false" />
     </list>
@@ -74,67 +92,83 @@
       <option name="presentableId" value="Default" />
       <updated>1606836484097</updated>
       <workItem from="1606836485206" duration="407000" />
-      <workItem from="1606836906254" duration="926000" />
+      <workItem from="1606836906254" duration="1371000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
+      <created>1606837915570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606837915570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic Logic Bank Test running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Logic Bank Test running" />
   </component>
   <component name="WindowStateProjectService">
     <state x="771" y="281" key="FileChooserDialogImpl" timestamp="1606836782671">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="771" y="281" key="FileChooserDialogImpl/0.25.1731.1095@0.25.1731.1095" timestamp="1606836782671" />
-    <state width="1277" height="291" key="GridCell.Tab.0.bottom" timestamp="1606837458709">
+    <state width="1277" height="291" key="GridCell.Tab.0.bottom" timestamp="1606838248328">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606837458709" />
-    <state width="1277" height="291" key="GridCell.Tab.0.center" timestamp="1606837458708">
+    <state width="1277" height="291" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248328" />
+    <state width="1277" height="291" key="GridCell.Tab.0.center" timestamp="1606838248327">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606837458708" />
-    <state width="1277" height="291" key="GridCell.Tab.0.left" timestamp="1606837458707">
+    <state width="1277" height="291" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248327" />
+    <state width="1277" height="291" key="GridCell.Tab.0.left" timestamp="1606838248326">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606837458707" />
-    <state width="1277" height="291" key="GridCell.Tab.0.right" timestamp="1606837458708">
+    <state width="1277" height="291" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248326" />
+    <state width="1277" height="291" key="GridCell.Tab.0.right" timestamp="1606838248328">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606837458708" />
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1606837448720">
+    <state width="1277" height="291" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248328" />
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1606838248237">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606837448720" />
-    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1606837448719">
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248237" />
+    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1606838248236">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606837448719" />
-    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1606837448718">
+    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248236" />
+    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1606838248236">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606837448718" />
-    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1606837448719">
+    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248236" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1606838248237">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606837448719" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606838248237" />
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor" timestamp="1606836888142">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/payment_allocation/tests/add_payment.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606837922768">
+      <screen x="0" y="25" width="1731" height="1095" />
+    </state>
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1606837922768" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1606837447995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1606838248217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
   </component>
 </project>
