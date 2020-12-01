@@ -11,6 +11,22 @@ It is an adaption of [this example](https://github.com/graphql-python/graphene-s
 
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
 
+Background
+----------
+GraphQL (as I understand it) moves API definition from 
+the server team (company, or org in company) to the consumers,
+who clearly better understand their requirements.  Clearly
+stating these can reduce traffic.  The focus is
+on efficient retrieval.
+
+Logic Base can reduce update logic coding (a signficant
+part of any database app) by 40X, by using
+spreadsheet-like rules plus Python for extensibility.  The
+focus is on update agility.
+
+Both are based on SQLAlchemy.  This project explores using
+Graphene for retrieval, and Logic Base for mutation logic.
+
 Getting started
 ---------------
 
