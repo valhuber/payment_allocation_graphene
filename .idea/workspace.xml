@@ -22,6 +22,7 @@
     <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Prep for GraphQL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606836484097</updated>
       <workItem from="1606836485206" duration="407000" />
-      <workItem from="1606836906254" duration="8111000" />
+      <workItem from="1606836906254" duration="10251000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606855607214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Prep for GraphQL">
+      <created>1606856874463</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606856874463</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,11 +243,11 @@
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-    <state x="584" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606855612479">
+    <state x="584" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606856879386">
       <screen x="0" y="25" width="1733" height="1095" />
     </state>
     <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1606854398300" />
-    <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606855612479" />
+    <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606856879386" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
