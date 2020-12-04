@@ -1,7 +1,7 @@
 Example: Graphene + SQLAlchemy + LogicBank
 ==========================================
 
-This example project demos integration between:
+This example project explores integration between:
 
 * [Graphene-SQLAlchemy](https://github.com/graphql-python/graphene-sqlalchemy)
 and 
@@ -10,6 +10,12 @@ and
 It is an adaption of [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy).
 
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
+
+-----------------
+
+> This is a **work in progress** to explore GraphQL, and Logic Bank integration.
+
+-----------------
 
 Background
 ----------
