@@ -76,12 +76,9 @@ chmod +x app.py
 ./app.py
 ```
 
-Now head on over to
-[http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
-and run some queries; samples below.
-
 #### Retrieval Example
 
+###### Resolved Issue
 Patterning the code after [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy),
 gets **fail** with ```Request' object has no attribute 'get'```.
 
@@ -106,6 +103,10 @@ app.add_url_rule(
 )
 ``` 
 ###### Single Type
+Open your browser to
+[http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
+and paste in the request below:
+
 ```
 {
   allCustomers(sort: [ID_ASC]) {
@@ -118,7 +119,18 @@ app.add_url_rule(
   }
 }
 ```
+
+
 ###### Multi-type
+Using your command line:
+```
+cd tests
+python test_get.py
+```
+Or, open your browser to
+[http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
+and paste in the request below:
+
 ```
 {
   allCustomers {

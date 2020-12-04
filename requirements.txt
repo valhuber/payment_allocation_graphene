@@ -2,3 +2,4 @@ Flask-GraphQL
 graphene-sqlalchemy
 logicbank
 logicbankutils
+requests
