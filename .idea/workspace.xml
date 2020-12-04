@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Prep for GraphQL">
+      <change afterPath="$PROJECT_DIR$/payment_allocation/images/multi-type.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/z_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +63,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/payment_allocation/images" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration name="add_payment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -122,7 +130,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606836484097</updated>
       <workItem from="1606836485206" duration="407000" />
-      <workItem from="1606836906254" duration="10251000" />
+      <workItem from="1606836906254" duration="10950000" />
+      <workItem from="1606925859905" duration="1699000" />
+      <workItem from="1607024010263" duration="3061000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -180,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606856874463</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Prep for GraphQL">
+      <created>1606882753690</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606882753690</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +213,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Logic Bank Test running" />
@@ -207,66 +225,83 @@
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="771" y="281" key="FileChooserDialogImpl/0.25.1731.1095@0.25.1731.1095" timestamp="1606836782671" />
-    <state width="1277" height="291" key="GridCell.Tab.0.bottom" timestamp="1606855235313">
+    <state width="1277" height="235" key="GridCell.Tab.0.bottom" timestamp="1607044762984">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235313" />
-    <state width="1277" height="291" key="GridCell.Tab.0.center" timestamp="1606855235312">
+    <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607044762984" />
+    <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
+    <state width="1277" height="235" key="GridCell.Tab.0.center" timestamp="1607044762984">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235312" />
-    <state width="1277" height="291" key="GridCell.Tab.0.left" timestamp="1606855235311">
+    <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607044762984" />
+    <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
+    <state width="1277" height="235" key="GridCell.Tab.0.left" timestamp="1607044762983">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235311" />
-    <state width="1277" height="291" key="GridCell.Tab.0.right" timestamp="1606855235312">
+    <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607044762983" />
+    <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008368" />
+    <state width="1277" height="235" key="GridCell.Tab.0.right" timestamp="1607044762984">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235312" />
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1606855235314">
+    <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607044762984" />
+    <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1607040603779">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235314" />
-    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1606855235313">
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607040603779" />
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008366" />
+    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1607040603779">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235313" />
-    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1606855235313">
+    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607040603779" />
+    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008365" />
+    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1607040603778">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235313" />
-    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1606855235314">
+    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607040603778" />
+    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008364" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1607040603779">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1606855235314" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607040603779" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008365" />
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor" timestamp="1606836888142">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-    <state x="584" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606856879386">
+    <state x="584" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606882758604">
       <screen x="0" y="25" width="1733" height="1095" />
     </state>
     <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1606854398300" />
-    <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606856879386" />
+    <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606882758604" />
+    <state x="652" y="320" width="670" height="676" key="search.everywhere.popup" timestamp="1607030584277">
+      <screen x="0" y="25" width="1731" height="1095" />
+    </state>
+    <state x="652" y="320" width="670" height="676" key="search.everywhere.popup/0.25.1731.1095@0.25.1731.1095" timestamp="1607030584277" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/payment_allocation/database.py</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/payment_allocation/z_database.py</url>
+          <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/payment_allocation/database.py</url>
+          <url>file://$PROJECT_DIR$/payment_allocation/z_database.py</url>
           <line>9</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/payment_allocation/app.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1606838297412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1606855098539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1607044683937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1607044762977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
   </component>
 </project>

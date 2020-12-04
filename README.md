@@ -83,11 +83,32 @@ Now head on over to
 [http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
 and run some queries; samples below.
 
-This fails with ```Request' object has no attribute 'get'```
+#### Retrieval Example
+
+Patterning the code after [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy),
+this **fails** with ```Request' object has no attribute 'get'```
 
 Mentioned in this [stack overflow](https://github.com/graphql-python/graphene-sqlalchemy/issues/130),
-which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286)
+which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286).
 
+Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
+(see app.py), but still fails.
+
+But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
+worked, using @yoursdearboy's lambda (see ```app.py```:
+
+```
+app.add_url_rule(
+  '/graphql',
+  view_func=GraphQLView.as_view(
+    'graphql',
+    schema=schema,
+    graphiql=True,
+    get_context=lambda: {'session': db.session}
+  )
+)
+``` 
+###### Single Type
 ```
 {
   allCustomers(sort: [ID_ASC]) {
@@ -100,7 +121,7 @@ which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issu
   }
 }
 ```
-
+###### Multi-type
 ```
 {
   allCustomers {
@@ -109,11 +130,20 @@ which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issu
         Id
         Balance
         OrderList {
-          CustomerID
-          AmountTotal
+          edges {
+            node {
+              CustomerId
+              AmountTotal
+            }
+          }
         }
       }
     }
   }
 }
 ```
+
+<figure><img src="images/multi-type.png" width="800"></figure>
+
+
+#### Update Example - TBD

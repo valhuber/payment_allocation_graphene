@@ -47,6 +47,8 @@ class Query(graphene.ObjectType):
     all_payments = SQLAlchemyConnectionField(Payment.connection)
     # Disable sorting over this field
     all_payment_allocations = SQLAlchemyConnectionField(PaymentAllocation.connection, sort=None)
+    # Allows sorting over multiple columns, by default over the primary key
+    all_orders = SQLAlchemyConnectionField(Order.connection)
 
 
 schema = graphene.Schema(query=Query)
