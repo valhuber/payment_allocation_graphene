@@ -155,4 +155,28 @@ and paste in the request below:
 <figure><img src="payment_allocation/images/multi-type.png" width="800"></figure>
 
 
-#### Update Example - TBD
+#### Update Example - WIP
+This fails: ```Schema is not configured for mutations```.
+
+Such configuration appears to be [quite code intensive](https://docs.graphene-python.org/en/latest/types/mutations/),
+but possibly create from model.  There appears to be some
+[promising work](https://github.com/goodking-bq/graphene-sqlalchemy-auto) in
+this area.
+
+```
+mutation {
+  customerCreate
+    ( input:
+        {
+            Id: "ADDED",
+            CompanyName: "Added, Inc",
+            Balance: 0,
+            CreditLimit: 0
+        }
+    )
+    { customer {
+      id
+    }
+  }
+}
+```

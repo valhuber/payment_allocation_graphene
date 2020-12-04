@@ -50,5 +50,10 @@ class Query(graphene.ObjectType):
     # Allows sorting over multiple columns, by default over the primary key
     all_orders = SQLAlchemyConnectionField(Order.connection)
 
+"""
+class Mutation(graphene.AbstractType, graphene.ObjectType):
 
-schema = graphene.Schema(query=Query)
+    create_nation = CreateNation.Field()
+"""
+
+schema = graphene.Schema(query=Query)  #, mutation=Mutation)

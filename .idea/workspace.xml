@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Basic GraphQL query running">
-      <change afterPath="$PROJECT_DIR$/payment_allocation/tests/test_get.py" afterDir="false" />
+    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="test program for reading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,7 @@
       <workItem from="1606836485206" duration="407000" />
       <workItem from="1606836906254" duration="10950000" />
       <workItem from="1606925859905" duration="1699000" />
-      <workItem from="1607024010263" duration="5289000" />
+      <workItem from="1607024010263" duration="7260000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -236,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607045481921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test program for reading">
+      <created>1607055963280</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607055963280</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,32 +264,33 @@
     <MESSAGE value="Basic Logic Bank Test running" />
     <MESSAGE value="Prep for GraphQL" />
     <MESSAGE value="Basic GraphQL query running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic GraphQL query running" />
+    <MESSAGE value="test program for reading" />
+    <option name="LAST_COMMIT_MESSAGE" value="test program for reading" />
   </component>
   <component name="WindowStateProjectService">
     <state x="771" y="281" key="FileChooserDialogImpl" timestamp="1606836782671">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="771" y="281" key="FileChooserDialogImpl/0.25.1731.1095@0.25.1731.1095" timestamp="1606836782671" />
-    <state width="1277" height="235" key="GridCell.Tab.0.bottom" timestamp="1607055411435">
+    <state width="638" height="235" key="GridCell.Tab.0.bottom" timestamp="1607056539853">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607055411435" />
+    <state width="638" height="235" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607056539853" />
     <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
-    <state width="1277" height="235" key="GridCell.Tab.0.center" timestamp="1607055411434">
+    <state width="638" height="235" key="GridCell.Tab.0.center" timestamp="1607056539853">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607055411434" />
+    <state width="638" height="235" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607056539853" />
     <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
-    <state width="1277" height="235" key="GridCell.Tab.0.left" timestamp="1607055411434">
+    <state width="638" height="235" key="GridCell.Tab.0.left" timestamp="1607056539852">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607055411434" />
+    <state width="638" height="235" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607056539852" />
     <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008368" />
-    <state width="1277" height="235" key="GridCell.Tab.0.right" timestamp="1607055411435">
+    <state width="638" height="235" key="GridCell.Tab.0.right" timestamp="1607056539853">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607055411435" />
+    <state width="638" height="235" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607056539853" />
     <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
     <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1607055294425">
       <screen x="0" y="25" width="1731" height="1095" />
@@ -309,10 +316,10 @@
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1607045489002">
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1607055970681">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607045489002" />
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607055970681" />
     <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606882758604" />
     <state x="577" y="510" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607045268573">
       <screen x="0" y="25" width="1731" height="1095" />
@@ -326,6 +333,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1607044683937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
     <SUITE FILE_PATH="coverage/payment_allocation_graphene$test_get.coverage" NAME="test_get Coverage Results" MODIFIED="1607055294340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1607055139315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1607056535186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
   </component>
 </project>
