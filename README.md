@@ -19,7 +19,7 @@ who clearly better understand their requirements.  Clear
 specifications can reduce traffic, in either size and or
 number of messages.  The focus is on **efficient retrieval.**
 
-**Logic Base** can reduce update logic coding (a signficant
+**Logic Base** can reduce update logic coding (a significant
 part of any database app) by 40X, by using
 spreadsheet-like rules plus Python for extensibility.  The
 focus is on **update agility.**
@@ -89,7 +89,7 @@ Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/3
 (see app.py), but still fails.
 
 But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
-worked, using @yoursdearboy's lambda (thankyou! see ```app.py```):
+worked, using @yoursdearboy's lambda (thank you! See ```app.py```):
 
 ```
 app.add_url_rule(
