@@ -72,24 +72,12 @@ Explore Graphene
 Now the following command will setup the database, and start the server:
 
 ```bash
+cd payment_allocation
 chmod +x app.py
 ./app.py
 ```
 
 #### Retrieval Example
-
-###### Resolved Issue
-Patterning the code after [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy),
-gets **fail** with ```Request' object has no attribute 'get'```.
-
-Mentioned in this [stack overflow](https://github.com/graphql-python/graphene-sqlalchemy/issues/130),
-which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286).
-
-Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
-(see app.py), but still fails.
-
-But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
-worked, using @yoursdearboy's lambda (thankyou! see ```app.py```):
 
 ```
 app.add_url_rule(
@@ -180,3 +168,17 @@ mutation {
   }
 }
 ```
+
+
+## Resolved Issue
+Patterning the code after [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy),
+gets **fail** with ```Request' object has no attribute 'get'```.
+
+Mentioned in this [stack overflow](https://github.com/graphql-python/graphene-sqlalchemy/issues/130),
+which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286).
+
+Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
+(see app.py), but still fails.
+
+But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
+worked, using @yoursdearboy's lambda (thankyou! see ```app.py```):
