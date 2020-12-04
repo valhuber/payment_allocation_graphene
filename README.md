@@ -143,7 +143,7 @@ app.add_url_rule(
 }
 ```
 
-<figure><img src="images/multi-type.png" width="800"></figure>
+<figure><img src="payment_allocation/images/multi-type.png" width="800"></figure>
 
 
 #### Update Example - TBD
