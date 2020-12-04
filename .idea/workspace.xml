@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Prep for GraphQL">
-      <change afterPath="$PROJECT_DIR$/payment_allocation/images/multi-type.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="Basic GraphQL query running">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/z_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +127,7 @@
       <workItem from="1606836485206" duration="407000" />
       <workItem from="1606836906254" duration="10950000" />
       <workItem from="1606925859905" duration="1699000" />
-      <workItem from="1607024010263" duration="3061000" />
+      <workItem from="1607024010263" duration="3364000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -197,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606882753690</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Basic GraphQL query running">
+      <created>1607045092290</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607045092290</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +220,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Logic Bank Test running" />
     <MESSAGE value="Prep for GraphQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prep for GraphQL" />
+    <MESSAGE value="Basic GraphQL query running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic GraphQL query running" />
   </component>
   <component name="WindowStateProjectService">
     <state x="771" y="281" key="FileChooserDialogImpl" timestamp="1606836782671">
@@ -269,11 +272,15 @@
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-    <state x="584" y="259" key="Vcs.Push.Dialog.v2" timestamp="1606882758604">
-      <screen x="0" y="25" width="1733" height="1095" />
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1607045198009">
+      <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1606854398300" />
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607045198009" />
     <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606882758604" />
+    <state x="577" y="510" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607045268573">
+      <screen x="0" y="25" width="1731" height="1095" />
+    </state>
+    <state x="577" y="510" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607045268573" />
     <state x="652" y="320" width="670" height="676" key="search.everywhere.popup" timestamp="1607030584277">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>

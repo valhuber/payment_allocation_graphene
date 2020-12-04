@@ -6,7 +6,7 @@ import logic_bank_utils.util as logic_bank_utils
     logic_bank_utils.add_python_path(project_dir="payment_allocation_graphene", my_file=__file__)
 print("\n" + did_fix_path + "\n\n" + sys_env_info + "\n\n")
 
-from payment_allocation.z_database import db_session, init_db
+from payment_allocation.database import db_session, init_db
 from payment_allocation.models import Customer, Order, Payment, PaymentAllocation
 
 from flask import Flask

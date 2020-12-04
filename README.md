@@ -69,15 +69,12 @@ python add_payment.py
 
 Explore Graphene
 ----------------
-***WIP*** - not running
-
 Now the following command will setup the database, and start the server:
 
 ```bash
 chmod +x app.py
 ./app.py
 ```
-
 
 Now head on over to
 [http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
@@ -86,7 +83,7 @@ and run some queries; samples below.
 #### Retrieval Example
 
 Patterning the code after [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy),
-this **fails** with ```Request' object has no attribute 'get'```
+gets **fail** with ```Request' object has no attribute 'get'```.
 
 Mentioned in this [stack overflow](https://github.com/graphql-python/graphene-sqlalchemy/issues/130),
 which links to [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/286).
@@ -95,7 +92,7 @@ Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/3
 (see app.py), but still fails.
 
 But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
-worked, using @yoursdearboy's lambda (see ```app.py```:
+worked, using @yoursdearboy's lambda (thankyou! see ```app.py```):
 
 ```
 app.add_url_rule(
