@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="test program for reading">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +154,9 @@
       <workItem from="1606836485206" duration="407000" />
       <workItem from="1606836906254" duration="10950000" />
       <workItem from="1606925859905" duration="1699000" />
-      <workItem from="1607024010263" duration="8078000" />
+      <workItem from="1607024010263" duration="8624000" />
+      <workItem from="1607063301258" duration="125000" />
+      <workItem from="1607095657097" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -254,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607059507712</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="test program for reading">
+      <created>1607059771969</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607059771969</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,54 +293,54 @@
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="771" y="281" key="FileChooserDialogImpl/0.25.1731.1095@0.25.1731.1095" timestamp="1606836782671" />
-    <state width="1277" height="235" key="GridCell.Tab.0.bottom" timestamp="1607058732694">
+    <state width="1277" height="235" key="GridCell.Tab.0.bottom" timestamp="1607063032936">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607058732694" />
+    <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032936" />
     <state width="1277" height="235" key="GridCell.Tab.0.bottom/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
-    <state width="1277" height="235" key="GridCell.Tab.0.center" timestamp="1607058732693">
+    <state width="1277" height="235" key="GridCell.Tab.0.center" timestamp="1607063032935">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607058732693" />
+    <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032935" />
     <state width="1277" height="235" key="GridCell.Tab.0.center/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
-    <state width="1277" height="235" key="GridCell.Tab.0.left" timestamp="1607058732693">
+    <state width="1277" height="235" key="GridCell.Tab.0.left" timestamp="1607063032935">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607058732693" />
+    <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032935" />
     <state width="1277" height="235" key="GridCell.Tab.0.left/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008368" />
-    <state width="1277" height="235" key="GridCell.Tab.0.right" timestamp="1607058732693">
+    <state width="1277" height="235" key="GridCell.Tab.0.right" timestamp="1607063032936">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607058732693" />
+    <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032936" />
     <state width="1277" height="235" key="GridCell.Tab.0.right/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008369" />
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1607055294425">
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom" timestamp="1607063032929">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607055294425" />
+    <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032929" />
     <state width="1277" height="291" key="GridCell.Tab.1.bottom/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008366" />
-    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1607055294425">
+    <state width="1277" height="291" key="GridCell.Tab.1.center" timestamp="1607063032929">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607055294425" />
+    <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032929" />
     <state width="1277" height="291" key="GridCell.Tab.1.center/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008365" />
-    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1607055294424">
+    <state width="1277" height="291" key="GridCell.Tab.1.left" timestamp="1607063032929">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607055294424" />
+    <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032929" />
     <state width="1277" height="291" key="GridCell.Tab.1.left/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008364" />
-    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1607055294425">
+    <state width="1277" height="291" key="GridCell.Tab.1.right" timestamp="1607063032929">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607055294425" />
+    <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1731.1095@0.25.1731.1095" timestamp="1607063032929" />
     <state width="1277" height="291" key="GridCell.Tab.1.right/0.25.1733.1095@0.25.1733.1095" timestamp="1606925008365" />
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor" timestamp="1606836888142">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
     <state x="492" y="158" width="1115" height="728" key="SettingsEditor/0.25.1731.1095@0.25.1731.1095" timestamp="1606836888142" />
-    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1607059513362">
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2" timestamp="1607059776675">
       <screen x="0" y="25" width="1731" height="1095" />
     </state>
-    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607059513362" />
+    <state x="583" y="259" key="Vcs.Push.Dialog.v2/0.25.1731.1095@0.25.1731.1095" timestamp="1607059776675" />
     <state x="584" y="259" key="Vcs.Push.Dialog.v2/0.25.1733.1095@0.25.1733.1095" timestamp="1606882758604" />
     <state x="577" y="510" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607045268573">
       <screen x="0" y="25" width="1731" height="1095" />

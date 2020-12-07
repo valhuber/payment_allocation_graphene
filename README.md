@@ -14,6 +14,8 @@ See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Proje
 -----------------
 
 > This is a **work in progress** to explore GraphQL, and Logic Bank integration.
+> 
+> Hello World, to confirm basic read, write with rules.
 
 -----------------
 
@@ -84,18 +86,8 @@ chmod +x app.py
 ```
 
 #### Retrieval Example
+The purpose of these is just to run, and return data.
 
-```
-app.add_url_rule(
-  '/graphql',
-  view_func=GraphQLView.as_view(
-    'graphql',
-    schema=schema,
-    graphiql=True,
-    get_context=lambda: {'session': db.session}
-  )
-)
-``` 
 ###### Single Type
 Open your browser to
 [http://127.0.0.1:5000/graphql](http://127.0.0.1:5000/graphql)
@@ -188,3 +180,15 @@ Also tried [this](https://github.com/graphql-python/graphene-sqlalchemy/issues/3
 
 But, the [suggestion here](https://github.com/graphql-python/graphene-sqlalchemy/issues/30)
 worked, using @yoursdearboy's lambda (thankyou! see ```app.py```):
+
+```
+app.add_url_rule(
+  '/graphql',
+  view_func=GraphQLView.as_view(
+    'graphql',
+    schema=schema,
+    graphiql=True,
+    get_context=lambda: {'session': db.session}
+  )
+)
+``` 
