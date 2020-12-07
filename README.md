@@ -145,7 +145,10 @@ and paste in the request below:
 This fails: ```Schema is not configured for mutations```.
 
 Such configuration appears to be [quite code intensive](https://docs.graphene-python.org/en/latest/types/mutations/),
-but possibly create from model.  There appears to be some
+but possibly can create from model (statically or dynamically).  There's
+[also this](https://graphql.org/graphql-js/mutations-and-input-types/).
+
+There appears to be some
 [promising work](https://github.com/goodking-bq/graphene-sqlalchemy-auto) in
 this area.
 
