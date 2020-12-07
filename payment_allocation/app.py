@@ -18,12 +18,13 @@ from flask_graphql import GraphQLView
 app = Flask(__name__)
 app.debug = True
 
-strategy = "dear_boy"  # seeking update, using "goodking_bq"  -- fails per readme
+strategy = "goodking_bq"  # seeking update, using "goodking_bq"  -- fails per readme
 if strategy == "like_example":  # ala https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy
     app.add_url_rule(
         "/graphql", view_func=GraphQLView.as_view("graphql", schema=schema, graphiql=True)
     )
 elif strategy == "dear_boy":  # from @yoursdearboy https://github.com/graphql-python/graphene-sqlalchemy/issues/30
+    debug = Base
     app.add_url_rule(
         '/graphql',
         view_func=GraphQLView.as_view(
@@ -43,20 +44,20 @@ elif strategy == "goodking_bq":  # from @yoursdearboy https://github.com/graphql
     Session = sessionmaker()
     """
 
-
-    class Query(QueryObjectType):
+    debug = Base
+    class QueryDyn(QueryObjectType):
         class Meta:
             declarative_base = Base
             exclude_models = ["User"]  # exclude models
 
-    class Mutation(MutationObjectType):
+    class MutationDyn(MutationObjectType):
         class Meta:
             declarative_base = Base
             session = db_session  # mutate used
 
             include_object = []  # you can use yourself mutation UserCreateMutation, UserUpdateMutation
 
-    dynamic_schema = graphene.Schema(query=Query, mutation=Mutation)
+    dynamic_schema = graphene.Schema(query=QueryDyn, mutation=MutationDyn)
     app.add_url_rule(
         '/graphql',
         view_func=GraphQLView.as_view(

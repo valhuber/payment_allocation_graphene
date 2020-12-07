@@ -3,3 +3,4 @@ graphene-sqlalchemy
 logicbank
 logicbankutils
 requests
+graphene_sqlalchemy_auto
