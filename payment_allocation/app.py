@@ -34,7 +34,7 @@ elif strategy == "dear_boy":  # from @yoursdearboy https://github.com/graphql-py
             get_context=lambda: {'session': db_session}
         ),
     )
-elif strategy == "goodking_bq":  # from https://github.com/goodking-bq
+elif strategy == "goodking_bq":  # from https://github.com/goodking-bq/graphene-sqlalchemy-auto
     from graphene_sqlalchemy_auto import QueryObjectType, MutationObjectType
     from sqlalchemy.ext.declarative import declarative_base
     import graphene
