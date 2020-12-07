@@ -34,7 +34,7 @@ elif strategy == "dear_boy":  # from @yoursdearboy https://github.com/graphql-py
             get_context=lambda: {'session': db_session}
         ),
     )
-elif strategy == "goodking_bq":  # from @yoursdearboy https://github.com/graphql-python/graphene-sqlalchemy/issues/30
+elif strategy == "goodking_bq":  # from https://github.com/goodking-bq
     from graphene_sqlalchemy_auto import QueryObjectType, MutationObjectType
     from sqlalchemy.ext.declarative import declarative_base
     import graphene
@@ -42,9 +42,15 @@ elif strategy == "goodking_bq":  # from @yoursdearboy https://github.com/graphql
     """
     Base = declarative_base()
     Session = sessionmaker()
+    
+    is app.config.update... required?
+    see https://github.com/goodking-bq/graphene-sqlalchemy-auto/blob/master/example/flask_app/app.py
     """
 
+    import payment_allocation.models as models  # just a guess
+
     debug = Base
+
     class QueryDyn(QueryObjectType):
         class Meta:
             declarative_base = Base
