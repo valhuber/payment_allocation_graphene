@@ -224,3 +224,82 @@ app.add_url_rule(
   )
 )
 ``` 
+## Env
+
+Initial try was with:
+```
+aniso8601==7.0.0
+certifi==2020.11.8
+chardet==3.0.4
+click==7.1.2
+Flask==1.1.2
+Flask-GraphQL==2.0.1
+graphene==2.1.8
+graphene-sqlalchemy==2.3.0
+graphene-sqlalchemy-auto==1.0.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
+graphql-server-core==1.2.0
+idna==2.10
+itsdangerous==1.1.0
+Jinja2==2.11.2
+logicbank==0.2.0
+logicbankutils==0.5.0
+MarkupSafe==1.1.1
+promise==2.3
+python-dateutil==2.8.1
+requests==2.25.0
+Rx==1.6.1
+singledispatch==3.4.0.3
+six==1.15.0
+SQLAlchemy==1.3.20
+SQLAlchemy-Utils==0.36.8
+urllib3==1.26.2
+Werkzeug==1.0.1
+```
+
+On 4/3, ```pip install graphene-sqlalchemy_auto -U```, now have:
+```
+aniso8601==7.0.0
+certifi==2020.11.8
+chardet==3.0.4
+click==7.1.2
+Flask==1.1.2
+Flask-GraphQL==2.0.1
+graphene==2.1.8
+graphene-sqlalchemy==2.3.0
+graphene-sqlalchemy-auto==1.3.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
+graphql-server-core==1.2.0
+idna==2.10
+itsdangerous==1.1.0
+Jinja2==2.11.2
+logicbank==0.2.0
+logicbankutils==0.5.0
+MarkupSafe==1.1.1
+promise==2.3
+python-dateutil==2.8.1
+requests==2.25.0
+Rx==1.6.1
+singledispatch==3.4.0.3
+six==1.15.0
+SQLAlchemy==1.3.20
+SQLAlchemy-Utils==0.36.8
+urllib3==1.26.2
+Werkzeug==1.0.1
+```
+
+Now failing with:
+```
+Traceback (most recent call last):
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 54, in <module>
+    class QueryDyn(QueryObjectType):
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/utils/subclass_with_meta.py", line 52, in __init_subclass__
+    super_class.__init_subclass_with_meta__(**options)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene_sqlalchemy_auto/query.py", line 103, in __init_subclass_with_meta__
+    for model in base.registry.mappers:
+AttributeError: type object 'Base' has no attribute 'registry'
+
+Process finished with exit code 1
+```
