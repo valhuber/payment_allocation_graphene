@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="trying graphene-sqlalchemy-auto==1.3.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +190,7 @@
       <workItem from="1607316795286" duration="1607000" />
       <workItem from="1607318521328" duration="4703000" />
       <workItem from="1617489262623" duration="1805000" />
-      <workItem from="1617497820574" duration="6623000" />
+      <workItem from="1617497820574" duration="8405000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -352,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617506543215</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="trying graphene-sqlalchemy-auto==1.3.0">
+      <created>1617506709397</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1617506709397</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +408,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1617506488798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1617507094591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
     <SUITE FILE_PATH="coverage/payment_allocation_graphene$test_get.coverage" NAME="test_get Coverage Results" MODIFIED="1607318553462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
     <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1617503218981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
     <SUITE FILE_PATH="coverage/payment_allocation_graphene$run.coverage" NAME="run example Coverage Results" MODIFIED="1617504095898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example" />

@@ -7,7 +7,7 @@ This example project explores integration between:
 and 
 * [LogicBank](https://github.com/valhuber/LogicBank)
 
-It is an adaption of [this example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy).
+It is an adaption of [the graphene flask example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy).
 
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
 
@@ -22,10 +22,11 @@ See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Proje
 Background
 ----------
 **GraphQL** (as I understand it) moves API definition from 
-the server team (company, or org in company) to the consumers,
+the server team to the consumers,
 who clearly better understand their requirements.  Clear
 specifications can reduce traffic, in either size and or
-number of messages.  The focus is on **efficient retrieval.**
+number of messages.  The focus is on **efficient retrieval
+and organizational independence.**
 
 **Logic Base** can reduce update logic coding (a signficant
 part of any database app) by 40X, by using
@@ -35,35 +36,18 @@ focus is on **update agility.**
 Both are based on SQLAlchemy.  This project explores using
 Graphene for retrieval, and Logic Base for mutation logic.
 
-Getting started
----------------
-
-First you'll need to get the source of the project. Do this by cloning the
-whole Graphene-SQLAlchemy repository:
+Install
+-------
 
 ```bash
-# Get the example project code
 git clone https://github.com/valhuber/payment_allocation_graphene.git
-```
 
-It is good idea (but not required) to create a virtual environment
-for this project. We'll do this using
-[virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-to keep things simple,
-but you may also find something like
-[virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/en/latest/)
-to be useful:
-
-```bash
 # Create a virtualenv in which we can install the dependencies
 cd payment_allocation_graphene
 virtualenv venv
 source venv/bin/activate
-```
 
-Now we can install our dependencies:
-
-```bash
+# install dependencies
 pip install -r requirements.txt
 ```
 
@@ -73,19 +57,65 @@ Verify LogicBank
 ```bash
 cd payment_allocation/tests
 python add_payment.py
+
+# consile log should end with:
+..Customer[ALFKI] {Correct adjusted Customer Result} Id: ALFKI, CompanyName: Alfreds Futterkiste, Balance:  [16.00-->] -984.00, CreditLimit: 2000.00  row@: 0x107e19730 - 2021-04-03 20:52:28,174 - logic_logger - DEBUG
+
+add_payment, ran to completion
+
 ```
 
-Explore Graphene
-----------------
-Now the following command will setup the database, and start the server:
-
-Currently not working - only using PyCharm...
+Run Mutation Test
+-----------------
+This fails, per the log below:
 
 ```bash
 cd payment_allocation
-chmod +x app.py
-./app.py
+export PYTHONPATH="/Users/val/dev/graph_ql/graphene-sqlalchemy-auto"
+python app.py
 ```
+
+
+## Fails to create schema
+
+
+On 4/3, ```pip install graphene-sqlalchemy_auto -U```.
+
+
+Now failing with:
+```
+QueryDyn, Base IsA: <class 'sqlalchemy.ext.declarative.api.DeclarativeMeta'>
+Traceback (most recent call last):
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 51, in <module>
+    dynamic_schema = graphene.Schema(query=QueryDyn, mutation=MutationDyn)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 78, in __init__
+    self.build_typemap()
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 167, in build_typemap
+    self._type_map = TypeMap(
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 80, in __init__
+    super(TypeMap, self).__init__(types)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 31, in __init__
+    self.update(reduce(self.reducer, types, OrderedDict()))  # type: ignore
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 88, in reducer
+    return self.graphene_reducer(map, type)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 117, in graphene_reducer
+    return GraphQLTypeMap.reducer(map, internal_type)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 109, in reducer
+    field_map = type_.fields
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/pyutils/cached_property.py", line 22, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 198, in fields
+    return define_field_map(self, self._fields)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 214, in define_field_map
+    assert isinstance(field_map, Mapping) and len(field_map) > 0, (
+AssertionError: MutationDyn fields must be a mapping (dict / OrderedDict) with field names as keys or a function which returns such a mapping.
+
+Process finished with exit code 1
+```
+
+--------
+# Ignore the rest...
+
 
 #### Retrieval Example
 The purpose of these is just to run, and return data.
@@ -226,99 +256,3 @@ app.add_url_rule(
   )
 )
 ``` 
-## Env
-
-Initial try was with:
-```
-aniso8601==7.0.0
-certifi==2020.11.8
-chardet==3.0.4
-click==7.1.2
-Flask==1.1.2
-Flask-GraphQL==2.0.1
-graphene==2.1.8
-graphene-sqlalchemy==2.3.0
-graphene-sqlalchemy-auto==1.0.0
-graphql-core==2.3.2
-graphql-relay==2.0.1
-graphql-server-core==1.2.0
-idna==2.10
-itsdangerous==1.1.0
-Jinja2==2.11.2
-logicbank==0.2.0
-logicbankutils==0.5.0
-MarkupSafe==1.1.1
-promise==2.3
-python-dateutil==2.8.1
-requests==2.25.0
-Rx==1.6.1
-singledispatch==3.4.0.3
-six==1.15.0
-SQLAlchemy==1.3.20
-SQLAlchemy-Utils==0.36.8
-urllib3==1.26.2
-Werkzeug==1.0.1
-```
-
-On 4/3, ```pip install graphene-sqlalchemy_auto -U```, now have:
-```
-aniso8601==7.0.0
-certifi==2020.11.8
-chardet==3.0.4
-click==7.1.2
-Flask==1.1.2
-Flask-GraphQL==2.0.1
-graphene==2.1.8
-graphene-sqlalchemy==2.3.0
-graphene-sqlalchemy-auto==1.3.0
-graphql-core==2.3.2
-graphql-relay==2.0.1
-graphql-server-core==1.2.0
-idna==2.10
-itsdangerous==1.1.0
-Jinja2==2.11.2
-logicbank==0.2.0
-logicbankutils==0.5.0
-MarkupSafe==1.1.1
-promise==2.3
-python-dateutil==2.8.1
-requests==2.25.0
-Rx==1.6.1
-singledispatch==3.4.0.3
-six==1.15.0
-SQLAlchemy==1.3.20
-SQLAlchemy-Utils==0.36.8
-urllib3==1.26.2
-Werkzeug==1.0.1
-```
-
-Now failing with:
-```
-QueryDyn, Base IsA: <class 'sqlalchemy.ext.declarative.api.DeclarativeMeta'>
-Traceback (most recent call last):
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 51, in <module>
-    dynamic_schema = graphene.Schema(query=QueryDyn, mutation=MutationDyn)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 78, in __init__
-    self.build_typemap()
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 167, in build_typemap
-    self._type_map = TypeMap(
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 80, in __init__
-    super(TypeMap, self).__init__(types)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 31, in __init__
-    self.update(reduce(self.reducer, types, OrderedDict()))  # type: ignore
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 88, in reducer
-    return self.graphene_reducer(map, type)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 117, in graphene_reducer
-    return GraphQLTypeMap.reducer(map, internal_type)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 109, in reducer
-    field_map = type_.fields
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/pyutils/cached_property.py", line 22, in __get__
-    value = obj.__dict__[self.func.__name__] = self.func(obj)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 198, in fields
-    return define_field_map(self, self._fields)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 214, in define_field_map
-    assert isinstance(field_map, Mapping) and len(field_map) > 0, (
-AssertionError: MutationDyn fields must be a mapping (dict / OrderedDict) with field names as keys or a function which returns such a mapping.
-
-Process finished with exit code 1
-```
