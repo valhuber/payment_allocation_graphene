@@ -292,14 +292,31 @@ Werkzeug==1.0.1
 
 Now failing with:
 ```
+QueryDyn, Base IsA: <class 'sqlalchemy.ext.declarative.api.DeclarativeMeta'>
 Traceback (most recent call last):
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 54, in <module>
-    class QueryDyn(QueryObjectType):
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/utils/subclass_with_meta.py", line 52, in __init_subclass__
-    super_class.__init_subclass_with_meta__(**options)
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene_sqlalchemy_auto/query.py", line 103, in __init_subclass_with_meta__
-    for model in base.registry.mappers:
-AttributeError: type object 'Base' has no attribute 'registry'
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 51, in <module>
+    dynamic_schema = graphene.Schema(query=QueryDyn, mutation=MutationDyn)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 78, in __init__
+    self.build_typemap()
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 167, in build_typemap
+    self._type_map = TypeMap(
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 80, in __init__
+    super(TypeMap, self).__init__(types)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 31, in __init__
+    self.update(reduce(self.reducer, types, OrderedDict()))  # type: ignore
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 88, in reducer
+    return self.graphene_reducer(map, type)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/typemap.py", line 117, in graphene_reducer
+    return GraphQLTypeMap.reducer(map, internal_type)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/typemap.py", line 109, in reducer
+    field_map = type_.fields
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/pyutils/cached_property.py", line 22, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 198, in fields
+    return define_field_map(self, self._fields)
+  File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 214, in define_field_map
+    assert isinstance(field_map, Mapping) and len(field_map) > 0, (
+AssertionError: MutationDyn fields must be a mapping (dict / OrderedDict) with field names as keys or a function which returns such a mapping.
 
 Process finished with exit code 1
 ```
