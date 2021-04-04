@@ -79,6 +79,8 @@ Explore Graphene
 ----------------
 Now the following command will setup the database, and start the server:
 
+Currently not working - only using PyCharm...
+
 ```bash
 cd payment_allocation
 chmod +x app.py

@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="trying graphene-sqlalchemy-auto==1.3.0">
-      <change beforePath="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example/flask_app/scheme.py" beforeDir="false" afterPath="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example/flask_app/scheme.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../graphene-sqlalchemy-auto/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../graphene-sqlalchemy-auto/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +189,7 @@
       <workItem from="1607316795286" duration="1607000" />
       <workItem from="1607318521328" duration="4703000" />
       <workItem from="1617489262623" duration="1805000" />
-      <workItem from="1617497820574" duration="6452000" />
+      <workItem from="1617497820574" duration="6623000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
       <created>1606837915570</created>
@@ -353,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617490451124</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="trying graphene-sqlalchemy-auto==1.3.0">
+      <created>1617506543215</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617506543215</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
