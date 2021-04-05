@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../graphene-sqlalchemy-auto/.idea/graphene-sqlalchemy-auto.iml" filepath="$PROJECT_DIR$/../graphene-sqlalchemy-auto/.idea/graphene-sqlalchemy-auto.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" filepath="$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" />
     </modules>
   </component>

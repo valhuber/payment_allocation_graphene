@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="trying graphene-sqlalchemy-auto==1.3.0">
+    <list default="true" id="c765d49e-bc39-4849-b7e0-529e5aed5032" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/payment_allocation/graphene_sqlalchemy_auto/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment_allocation/graphene_sqlalchemy_auto/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment_allocation/graphene_sqlalchemy_auto/mutation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment_allocation/graphene_sqlalchemy_auto/query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment_allocation/graphene_sqlalchemy_auto/types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payment_allocation_graphene.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/database.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_allocation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment_allocation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,31 +38,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="42501119-933a-44c5-b9e9-bee50bfb4418" />
-  <component name="ProjectId" id="1l3rBx5mrA9ZlsK2CFGdf8mLMSj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1qgn192gjiFCebJjwNXnXIL3Hkn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/payment_allocation" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/payment_allocation/tests" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/payment_allocation/images" />
+      <recent name="$PROJECT_DIR$/payment_allocation" />
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
@@ -114,253 +104,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="graphene-sqlalchemy-auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example/run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_get" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="payment_allocation_graphene" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/payment_allocation/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/payment_allocation/tests/test_get.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.add_payment" />
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.run example" />
-      <item itemvalue="Python.test_get" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.run example" />
         <item itemvalue="Python.add_payment" />
-        <item itemvalue="Python.test_get" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ceb7d28b-11a8-48bf-a05a-5cbe9fc25c45" name="Default Changelist" comment="" />
-      <created>1606836484097</created>
+      <changelist id="c765d49e-bc39-4849-b7e0-529e5aed5032" name="Default Changelist" comment="" />
+      <created>1617509882620</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606836484097</updated>
-      <workItem from="1606836485206" duration="407000" />
-      <workItem from="1606836906254" duration="10950000" />
-      <workItem from="1606925859905" duration="1699000" />
-      <workItem from="1607024010263" duration="8624000" />
-      <workItem from="1607063301258" duration="125000" />
-      <workItem from="1607095657097" duration="757000" />
-      <workItem from="1607316795286" duration="1607000" />
-      <workItem from="1607318521328" duration="4703000" />
-      <workItem from="1617489262623" duration="1805000" />
-      <workItem from="1617497820574" duration="8405000" />
+      <updated>1617509882620</updated>
+      <workItem from="1617509884368" duration="78000" />
+      <workItem from="1617509966631" duration="443000" />
+      <workItem from="1617510419767" duration="73000" />
+      <workItem from="1617510502782" duration="86000" />
+      <workItem from="1617510597937" duration="96000" />
+      <workItem from="1617510703963" duration="5572000" />
+      <workItem from="1617560528489" duration="3080000" />
+      <workItem from="1617633627588" duration="1099000" />
     </task>
-    <task id="LOCAL-00001" summary="Basic Logic Bank Test running">
-      <created>1606837915570</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1606837915570</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Basic Logic Bank Test running">
-      <created>1606838504297</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1606838504297</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Prep for GraphQL">
-      <created>1606851883487</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1606851883487</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Prep for GraphQL">
-      <created>1606852043507</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1606852043507</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Prep for GraphQL">
-      <created>1606852942002</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1606852942002</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Prep for GraphQL">
-      <created>1606854392099</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1606854392099</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Prep for GraphQL">
-      <created>1606855607214</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1606855607214</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Prep for GraphQL">
-      <created>1606856874463</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1606856874463</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Prep for GraphQL">
-      <created>1606882753690</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1606882753690</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Basic GraphQL query running">
-      <created>1607045092290</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1607045092290</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Basic GraphQL query running">
-      <created>1607045481921</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1607045481921</updated>
-    </task>
-    <task id="LOCAL-00012" summary="test program for reading">
-      <created>1607055963280</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1607055963280</updated>
-    </task>
-    <task id="LOCAL-00013" summary="test program for reading">
-      <created>1607058799472</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1607058799472</updated>
-    </task>
-    <task id="LOCAL-00014" summary="test program for reading">
-      <created>1607059507712</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1607059507712</updated>
-    </task>
-    <task id="LOCAL-00015" summary="test program for reading">
-      <created>1607059771969</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1607059771969</updated>
-    </task>
-    <task id="LOCAL-00016" summary="test program for reading">
-      <created>1607316948344</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1607316948344</updated>
-    </task>
-    <task id="LOCAL-00017" summary="test program for reading">
-      <created>1607317468348</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1607317468348</updated>
-    </task>
-    <task id="LOCAL-00018" summary="test program for reading">
-      <created>1607318847429</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1607318847429</updated>
-    </task>
-    <task id="LOCAL-00019" summary="test program for reading">
-      <created>1607319921180</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1607319921180</updated>
-    </task>
-    <task id="LOCAL-00020" summary="test program for reading">
-      <created>1607321008829</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1607321008829</updated>
-    </task>
-    <task id="LOCAL-00021" summary="test program for reading">
-      <created>1607353123877</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1607353123877</updated>
-    </task>
-    <task id="LOCAL-00022" summary="trying graphene-sqlalchemy-auto==1.3.0">
-      <created>1617490451124</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1617490451124</updated>
-    </task>
-    <task id="LOCAL-00023" summary="trying graphene-sqlalchemy-auto==1.3.0">
-      <created>1617506543215</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1617506543215</updated>
-    </task>
-    <task id="LOCAL-00024" summary="trying graphene-sqlalchemy-auto==1.3.0">
-      <created>1617506709397</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1617506709397</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,39 +145,24 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic Logic Bank Test running" />
-    <MESSAGE value="Prep for GraphQL" />
-    <MESSAGE value="Basic GraphQL query running" />
-    <MESSAGE value="test program for reading" />
-    <MESSAGE value="trying graphene-sqlalchemy-auto==1.3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying graphene-sqlalchemy-auto==1.3.0" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/payment_allocation/app.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../graphene-sqlalchemy-auto/example/flask_app/scheme.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="12" />
+          <line>76</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/payment_allocation/app.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="16" />
+          <line>61</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1617507094591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$test_get.coverage" NAME="test_get Coverage Results" MODIFIED="1607318553462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1617503218981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
-    <SUITE FILE_PATH="coverage/payment_allocation_graphene$run.coverage" NAME="run example Coverage Results" MODIFIED="1617504095898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../graphene-sqlalchemy-auto/example" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$app.coverage" NAME="app Coverage Results" MODIFIED="1617634516955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation" />
+    <SUITE FILE_PATH="coverage/payment_allocation_graphene$add_payment.coverage" NAME="add_payment Coverage Results" MODIFIED="1617511133314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/payment_allocation/tests" />
   </component>
 </project>

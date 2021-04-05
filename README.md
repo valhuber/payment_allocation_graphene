@@ -1,5 +1,4 @@
-Example: Graphene + SQLAlchemy + LogicBank
-==========================================
+# Example: Graphene + SQLAlchemy + LogicBank
 
 This example project explores integration between:
 
@@ -19,8 +18,7 @@ See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Proje
 
 -----------------
 
-Background
-----------
+## Background
 **GraphQL** (as I understand it) moves API definition from 
 the server team to the consumers,
 who clearly better understand their requirements.  Clear
@@ -36,8 +34,7 @@ focus is on **update agility.**
 Both are based on SQLAlchemy.  This project explores using
 Graphene for retrieval, and Logic Base for mutation logic.
 
-Install
--------
+## Install
 
 ```bash
 git clone https://github.com/valhuber/payment_allocation_graphene.git
@@ -51,42 +48,164 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Verify LogicBank
-----------------
+Here is failing pip freeze:
+```bash
+aniso8601==7.0.0
+certifi==2020.12.5
+chardet==4.0.0
+click==7.1.2
+Flask==1.1.2
+Flask-GraphQL==2.0.1
+Flask-SQLAlchemy==2.4.4
+graphene==2.1.8
+graphene-sqlalchemy==2.3.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
+graphql-server-core==1.2.0
+idna==2.10
+itsdangerous==1.1.0
+Jinja2==2.11.3
+logicbank==0.9.6
+logicbankutils==0.6.0
+MarkupSafe==1.1.1
+promise==2.3
+python-dateutil==2.8.1
+requests==2.25.1
+Rx==1.6.1
+singledispatch==3.6.1
+six==1.15.0
+SQLAlchemy==1.3.20
+SQLAlchemy-Utils==0.36.8
+urllib3==1.26.4
+Werkzeug==1.0.1
+```
+
+vs. working pip freeze from graphene-sqlalchemy-auto
+```bash
+aniso8601==7.0.0
+click==7.1.2
+Flask==1.1.2
+Flask-GraphQL==2.0.1
+Flask-SQLAlchemy==2.4.4
+graphene==2.1.8
+graphene-sqlalchemy==2.3.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
+graphql-server-core==1.2.0
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+promise==2.3
+Rx==1.6.1
+singledispatch==3.4.0.3
+six==1.15.0
+SQLAlchemy==1.3.20
+Werkzeug==1.0.1
+```
+
+### Verify LogicBank
+
 
 ```bash
 cd payment_allocation/tests
 python add_payment.py
 
-# consile log should end with:
+# console log should end with:
 ..Customer[ALFKI] {Correct adjusted Customer Result} Id: ALFKI, CompanyName: Alfreds Futterkiste, Balance:  [16.00-->] -984.00, CreditLimit: 2000.00  row@: 0x107e19730 - 2021-04-03 20:52:28,174 - logic_logger - DEBUG
 
 add_payment, ran to completion
 
 ```
 
-Run Mutation Test
------------------
+## Run Mutation Test
+
 This fails, per the log below:
 
 ```bash
 cd payment_allocation
-export PYTHONPATH="/Users/val/dev/graph_ql/graphene-sqlalchemy-auto"
+export PYTHONPATH="/Users/val/dev/graph_ql/payment_allocation_graphene/"
 python app.py
 ```
 
 
-## Fails to create schema
-
+### Fails to create schema
 
 On 4/3, ```pip install graphene-sqlalchemy_auto -U```.
 
-
 Now failing with:
 ```
-QueryDyn, Base IsA: <class 'sqlalchemy.ext.declarative.api.DeclarativeMeta'>
+(venv) val@Vals-MacBook-Pro-16 payment_allocation % export PYTHONPATH="/Users/val/dev/graph_ql/payment_allocation_graphene/"
+(venv) val@Vals-MacBook-Pro-16 payment_allocation % python app.py                                                           
+
+logic/__init__.py#<module>(): BEGIN - setup logging, connect to db, register listeners
+
+
+Validate Rule BankAbstractRule Bank[0x102709d30] (loaded 2021-04-05 07:58:14.607281)
+Mapped Class[Customer] rules:
+  Derive Customer.Balance as Sum(Order.AmountOwed Where None)
+Mapped Class[Order] rules:
+  Derive Order.AmountOwed as Formula (1): Rule.formula(derive=Order.AmountOwed, as_expressi [...]
+  Derive Order.AmountPaid as Sum(PaymentAllocation.AmountAllocated Where None)
+Mapped Class[PaymentAllocation] rules:
+  Derive PaymentAllocation.AmountAllocated as Formula (1): Rule.formula(derive=PaymentAllocation.AmountAlloc [...]
+Mapped Class[Payment] rules:
+  RowEvent Function: <function allocate_payment at 0x1023c05e0> 
+
+logic/__init__.py#<module>(): END - connected, session created, listeners registered
+
+
+logic/__init__.py#<module>(): BEGIN - setup logging, connect to db, register listeners
+
+
+Validate Rule BankAbstractRule Bank[0x102709d30] (loaded 2021-04-05 07:58:14.692094)
+Mapped Class[Customer] rules:
+  Derive Customer.Balance as Sum(Order.AmountOwed Where None)
+Mapped Class[Order] rules:
+  Derive Order.AmountOwed as Formula (1): Rule.formula(derive=Order.AmountOwed, as_expressi [...]
+  Derive Order.AmountPaid as Sum(PaymentAllocation.AmountAllocated Where None)
+Mapped Class[PaymentAllocation] rules:
+  Derive PaymentAllocation.AmountAllocated as Formula (1): Rule.formula(derive=PaymentAllocation.AmountAlloc [...]
+Mapped Class[Payment] rules:
+  RowEvent Function: <function allocate_payment at 0x1023c05e0> 
+
+logic/__init__.py#<module>(): END - connected, session created, listeners registered
+
+
+NOT Fixing path (default PyCharm, set in VSC Launch Config)
+
+**************** add_python_path BEGIN          calling file: app.py
+
+Run Environment info...
+
+Current Working Directory: /Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation
+
+sys.path: (Python imports)
+/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation
+/Users/val/dev/graph_ql/payment_allocation_graphene
+/Users/val/.pyenv/versions/3.8.6/lib/python38.zip
+/Users/val/.pyenv/versions/3.8.6/lib/python3.8
+/Users/val/.pyenv/versions/3.8.6/lib/python3.8/lib-dynload
+/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages
+
+From: app.py
+
+Using Python: 3.8.6 (default, Oct 27 2020, 21:11:31) 
+[Clang 12.0.0 (clang-1200.0.32.27)]
+
+At: 2021-04-05 07:58:14.723091
+
+fix path: NOT Fixing path (default PyCharm, set in VSC Launch Config)
+
+**************** add_python_path END
+
+
+app - db IsA: <class 'flask_sqlalchemy.SQLAlchemy'>
+app - models_base IsA: <class 'flask_sqlalchemy.model.DefaultMeta'>
+
+scheme: QueryDyn, db IsA: <class 'flask_sqlalchemy.SQLAlchemy'>
+scheme: QueryDyn, db.Model IsA: <class 'flask_sqlalchemy.model.DefaultMeta'>
 Traceback (most recent call last):
-  File "/Users/val/dev/graph_ql/payment_allocation_graphene/payment_allocation/app.py", line 51, in <module>
+  File "app.py", line 77, in <module>
     dynamic_schema = graphene.Schema(query=QueryDyn, mutation=MutationDyn)
   File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphene/types/schema.py", line 78, in __init__
     self.build_typemap()
@@ -109,8 +228,8 @@ Traceback (most recent call last):
   File "/Users/val/dev/graph_ql/payment_allocation_graphene/venv/lib/python3.8/site-packages/graphql/type/definition.py", line 214, in define_field_map
     assert isinstance(field_map, Mapping) and len(field_map) > 0, (
 AssertionError: MutationDyn fields must be a mapping (dict / OrderedDict) with field names as keys or a function which returns such a mapping.
+(venv) val@Vals-MacBook-Pro-16 payment_allocation % 
 
-Process finished with exit code 1
 ```
 
 --------

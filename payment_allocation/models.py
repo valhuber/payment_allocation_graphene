@@ -5,9 +5,10 @@ from logic_bank import logic_bank  # import this first - import ordering
 from sqlalchemy import Boolean, Column, DECIMAL, DateTime, Float, ForeignKey, Integer, LargeBinary, String, \
     UniqueConstraint, select, func
 from sqlalchemy.orm import relationship, column_property
-from sqlalchemy.ext.declarative import declarative_base
+from flask_sqlalchemy import SQLAlchemy
 
-Base = declarative_base()
+db = SQLAlchemy()
+Base = db.Model
 metadata = Base.metadata
 
 
