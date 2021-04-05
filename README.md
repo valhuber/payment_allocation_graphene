@@ -234,11 +234,11 @@ AssertionError: MutationDyn fields must be a mapping (dict / OrderedDict) with f
 
 About to fail:
 
-<figure><img src="images/fails-here.png"></figure>
+<figure><img src="payment_allocation/images/fails-here.png"></figure>
 
 Same point in working example:
 
-<figure><img src="images/example-works.png"></figure>
+<figure><img src="payment_allocation/images/example-works.png"></figure>
 
 --------
 # Ignore the rest...
