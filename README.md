@@ -6,7 +6,7 @@ This example project explores integration between:
 and 
 * [LogicBank](https://github.com/valhuber/LogicBank)
 
-It is an adaption of [the graphene flask example](https://github.com/graphql-python/graphene-sqlalchemy/tree/master/examples/flask_sqlalchemy).
+It is an adaption of [the graphene SQLAlchemy auto example](https://github.com/goodking-bq/graphene-sqlalchemy-auto).
 
 See the [LogicBank Wiki](https://github.com/valhuber/LogicBank/wiki/Sample-Project---Allocation) for an overview of the ```payment_allocation``` application.
 
